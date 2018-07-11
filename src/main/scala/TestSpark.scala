@@ -17,7 +17,5 @@ object TestSpark {
     ).map(x =>(x(0), x(1)))
       .toDF("key","value")
 
-    df.show()
-
   }
 }
