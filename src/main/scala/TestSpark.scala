@@ -16,6 +16,6 @@ object TestSpark {
       Seq("e", "4")
     ).map(x =>(x(0), x(1)))
       .toDF("key","value")
-
+    df.show()
   }
 }
