@@ -2,7 +2,7 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.{SparkConf, SparkContext}
-import spark.implicits._
+
 
 object ScalaExercisesUsingRDD {
   //Main
@@ -50,10 +50,6 @@ object ScalaExercisesUsingRDD {
       countAvg = 0.0
     })
     for(line <- avgPriceInCity)println()
-
-
-    val avgPricePerCity = rddData.groupBy(r=>r.getAs[String]("Location")).aggregate()
-    avgPricePerCity
 
   }
 }
