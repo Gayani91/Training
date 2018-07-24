@@ -1,0 +1,1 @@
+echo "read first no"; read num1; echo "read second no"; read num2; echo "Total =  `expr $num1 + $num2`"
