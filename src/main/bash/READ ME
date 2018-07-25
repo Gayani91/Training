@@ -1,0 +1,6 @@
+Program to make 2 functions in wordTest.sh and call those two from the secondFile.sh
+===================
+
+./secondFile.sh
+./secondFile.sh add 12 312
+./secondFile.sh wordCount
